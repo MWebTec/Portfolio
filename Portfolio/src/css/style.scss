@@ -1,0 +1,51 @@
+ @import "company-color";
+ 
+ /* Global Styling */
+ body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+    "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+
+// mixin = Function, Aufruf über @include rightCorner()
+// Parmater übergabe auch möglich
+// Variablen über $varName Deafult über 
+@mixin rightCorner() {
+    position: absolute;
+}
+
+@mixin farbDiv() {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+main {
+    display: grid;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        text-align: center;
+        color: map-get($palette, "clr6");
+    }
+
+    #farbpalette {
+        // display: grid;
+        display: inline-block;
+
+        & div {
+            @include farbDiv();    
+        }
+    
+        @for $i from 1 through $palette-size {
+            & div:nth-child(#{$i}) {
+                background-color: map-get($palette, "clr#{$i}");
+            }
+        }
+    }
+}
+
