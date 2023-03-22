@@ -1,14 +1,11 @@
- @import "company-color";
+ @import 'company-color';
+ @import 'presets';
  
  /* Global Styling */
  body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
     "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    margin: 0;
-    padding: 0;
     height: 100%;
-    box-sizing: border-box;
-    // background-color: map-get($palette, "clr1");
 }
 
 h1 {
@@ -32,21 +29,19 @@ h1 {
 #grid-container {
     display: grid;
     position: relative;
-    height: 100%;
+    align-items: center;
     width: 80%;
     left: 10%;
     right: auto;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50px 600px 600px 300px 50px;
+    grid-template-rows: 50px 600px 600px 300px 150px;
     grid-template-areas: "header header header header"
                          "main main main main"
                          "gallery gallery gallery gallery"
                          "clr clr clr clr"
                          "footer footer footer footer";
-    
+                         
     & header {
         grid-area: header;
-
 
         & #company {
             width: 30%;
@@ -60,7 +55,6 @@ h1 {
 
             & h1 {
                 display: inline-block;
-                width: 80%;
                 height: 100%;
                 margin: 0;
                 color: map-get($palette, "clr4");
@@ -76,8 +70,6 @@ h1 {
     }
 
     & #main-content {
-        position: relative;
-        top: 50%;
         width: 100%;
         height: 100%;
         grid-area: main;
@@ -85,7 +77,6 @@ h1 {
         & #aboutMe {
             display: inline-block;
             width: 100%;
-
 
             & h1 {
                 display: inline-block;
@@ -108,28 +99,24 @@ h1 {
     & #projekt-gallery {
         grid-area: gallery;
         background-color: map-get($palette, "clr2");
-        display: flex;
         width: 100%;
         height: 100%;
-
     }
 
     & #farbpalette {
-        display: inline-block;
-        position: relative;
-        top: 50%;
         grid-area: clr;
+        width: 100%;
+        height: 100%;
 
         & h1 {
+            width: 100%;
             padding: 1rem;
             text-align: center;
             color: map-get($palette, "clr6");
         }
 
         & .flex-container {
-            display: flex;
             gap: 1rem;
-            justify-content: center;
 
             & div {
                 @include farbDiv();    
@@ -145,9 +132,33 @@ h1 {
 
     & footer {
         grid-area: footer;
+        display: inline-block;
         background-color: map-get($palette, "clr2");
         width: 100%;
         height: 100%;
+
+        & .firmen-logo {
+            display: inline-block;
+            height: 100%;
+
+            & svg {
+                display: inline-block;
+                height: 100%;
+            }
+        }
+
+        & #slogan {
+            font-size: 1.5rem;
+        }
+
+        & #social-links {
+            width: 100%;
+            height: 100%;
+
+            & a {
+                padding: 1rem;
+            }
+        }
     }
 }
 
