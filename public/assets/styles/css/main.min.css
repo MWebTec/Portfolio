@@ -1,0 +1,40 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.header-line {
+  position: absolute;
+}
+.header-line .line {
+  position: absolute;
+  left: 8rem;
+  top: 6rem;
+  bottom: 0;
+  width: 2px;
+  height: 100vh;
+  background-color: #45615F;
+}
+.header-line .title {
+  position: relative;
+  top: 55vh;
+  left: 4.4rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  transform: rotate(-90deg);
+}
+
+#mainNavigation {
+  padding: 0;
+  background-color: #4AB6AF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#mainNavigation .navbar-collapse {
+  flex-grow: 0;
+}
+#mainNavigation .navbar-collapse .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}/*# sourceMappingURL=main.min.css.map */
