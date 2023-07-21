@@ -1,40 +1,111 @@
+@charset "UTF-8";
+/* Für Webkit-basierte Browser (z. B. Chrome, Safari) */
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  font-family: "ROBOTO", sans-serif;
   background-color: #f0f0f0;
+}
+
+section {
+  z-index: 50;
 }
 
 .header-line {
   position: absolute;
+  color: #F3F0F0;
 }
 .header-line .line {
   position: absolute;
-  left: 8rem;
+  left: 6rem;
   top: 6rem;
   bottom: 0;
-  width: 2px;
+  width: 1px;
   height: 100vh;
-  background-color: #45615F;
+  background-color: #4AB6AF;
 }
 .header-line .title {
   position: relative;
+  height: 70px;
   top: 55vh;
-  left: 4.4rem;
-  font-weight: bold;
+  left: 28px;
+  font-weight: 500;
   font-size: 2rem;
-  color: #333;
+  color: #549591;
+  width: 9rem;
   padding: 5px 10px;
+  margin: 0;
+  text-align: center;
   background-color: #f0f0f0;
   transform: rotate(-90deg);
 }
 
 #mainNavigation {
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
   padding: 0;
-  background-color: #4AB6AF;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #96DDD0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  max-height: 70px;
+}
+#mainNavigation .navbar-brand {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+#mainNavigation .navbar-brand #firmenLogo {
+  height: 50px;
+}
+#mainNavigation .navbar-brand h1 {
+  margin: 0;
 }
 #mainNavigation .navbar-collapse {
   flex-grow: 0;
 }
 #mainNavigation .navbar-collapse .nav-link {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #F3F0F0;
+}
+#mainNavigation .navbar-collapse .nav-link:last-child {
+  margin-right: 60px;
+}
+
+#about p {
+  padding-top: 3rem;
+}
+
+#aboutMeLogoImg {
+  position: relative;
+}
+#aboutMeLogoImg #aboutImg {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+#aboutMeLogoImg #aboutImg img {
+  height: 100%;
+}
+
+#navbarNavAltMarkup a {
+  position: relative;
+}
+#navbarNavAltMarkup a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #5CE08D;
+  transition: width 0.5s ease;
+}
+
+#navbarNavAltMarkup a.active::before {
+  width: var(--link-width);
 }/*# sourceMappingURL=main.min.css.map */

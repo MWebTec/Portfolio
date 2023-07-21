@@ -1,0 +1,142 @@
+// Dekl & Init
+$navLinePosition: 6rem;
+$navLineTitleSize: 70px;
+$navFirmenLogo: 70px;
+
+
+/* Für Webkit-basierte Browser (z. B. Chrome, Safari) */
+::-webkit-scrollbar {
+    display: none;
+  }
+
+// Global
+body {
+    font-family: "ROBOTO", sans-serif;
+    background-color: #f0f0f0;
+}
+
+section {
+    z-index: 50;
+}
+
+// Navigation Line
+.header-line{
+    position: absolute;
+    color: #F3F0F0;
+
+    & .line {
+        position: absolute;
+        left: $navLinePosition;
+        top: $navLinePosition;
+        bottom: 0;
+        width: 1px;
+        height: 100vh;
+        background-color: #4AB6AF;
+    }
+    
+    &  .title {
+        position: relative;
+        height: $navLineTitleSize;
+        top: 55vh;
+        left: calc($navLineTitleSize / 2.5);
+        font-weight: 500;
+        font-size: 2rem;
+        color: #549591;
+        width: 9rem;
+        padding: 5px 10px;
+        margin: 0;
+        text-align: center;
+        background-color: #f0f0f0;
+        transform: rotate(-90deg);
+    }
+}
+
+// Navigation
+#mainNavigation {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    padding: 0;
+    background-color: #96DDD0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    max-height: $navFirmenLogo;
+
+    & .navbar-brand {
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+        
+        & #firmenLogo {
+            height: 50px;
+        }
+
+        & h1{
+            margin: 0; 
+        }
+    }
+
+    & .navbar-collapse {
+        flex-grow: 0;
+
+        & .nav-link {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            color: #F3F0F0;
+
+            &:last-child {
+                margin-right: 60px;
+            }
+        }
+    }
+}
+
+// about Section
+#about {
+
+    & p {
+        padding-top: 3rem;
+    }
+}
+
+#aboutMeLogoImg {
+    position: relative;
+
+    & #aboutImg {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 40%;
+
+        & img {
+            height: 100%;
+        }
+    }
+}
+
+#navbarNavAltMarkup {
+    & a {
+        position: relative;
+    }
+
+    & a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #5CE08D;
+      transition: width 0.5s ease;
+    }
+  }
+  
+  #navbarNavAltMarkup {
+    & a.active::before {
+      width: var(--link-width);
+    }
+  }
+
+
+
+

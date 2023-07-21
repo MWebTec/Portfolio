@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 841.995 595.35" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M354.629 156.035L287.448 200.477L287.448 289.362L354.629 333.804L399.488 304.918L399.416 356.025L466.597 400.467L533.778 356.025L533.778 267.141L466.597 222.698L421.201 250.698L421.81 200.477L354.629 156.035Z" id="Fill"/>
+<linearGradient gradientTransform="matrix(1.11968 0 0 1.11105 175.48 89.3719)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="100" x2="320" y1="170" y2="170">
+<stop offset="0.025" stop-color="#5ce08d" stop-opacity="0.616775"/>
+<stop offset="1" stop-color="#4ab6af"/>
+</linearGradient>
+</defs>
+<g id="Ebene-1" vectornator:layerName="Ebene 1">
+<g opacity="1" vectornator:layerName="Gruppieren 1"/>
+<g opacity="1" vectornator:layerName="Gruppieren 3">
+<g opacity="1" vectornator:layerName="Gruppieren 1">
+<g opacity="1" vectornator:layerName="Gruppieren 1">
+<g opacity="1" vectornator:layerName="Kurve 37">
+<use fill="url(#LinearGradient)" fill-rule="nonzero" stroke="none" xlink:href="#Fill"/>
+<mask height="244.432" id="StrokeMask" maskUnits="userSpaceOnUse" width="246.33" x="287.448" y="156.035">
+<rect fill="#000000" height="244.432" stroke="none" width="246.33" x="287.448" y="156.035"/>
+<use fill="#ffffff" fill-rule="evenodd" stroke="none" xlink:href="#Fill"/>
+</mask>
+<use fill="none" mask="url(#StrokeMask)" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-opacity="0" stroke-width="6.86152" xlink:href="#Fill"/>
+</g>
+<path d="M299.935 287.498L299.935 203.35L354.264 240.218L410.417 203.072L410.086 354.061L466.312 316.253L522.75 353.948L523.022 269.405" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3.43076" vectornator:layerName="Kurve 38"/>
+</g>
+</g>
+</g>
+<g opacity="1" vectornator:layerName="Gruppieren 1">
+<g opacity="1" vectornator:layerName="Gruppieren 1"/>
+</g>
+</g>
+</svg>
