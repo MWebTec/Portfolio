@@ -20,22 +20,23 @@
         
         <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavigation">
             <div class="container-fluid" style="height: 70px;">  
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#Home">
                     <img src="/public/assets/img/MWebTec_Logo_Neu.svg" alt="Firmen Logo MWebTec" id="firmenLogo">
                     <h1 class="d-inline-block align-middle h2">MWebTec</h1>
                 </a>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="Home">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Service</a>
-                  <a class="nav-link" href="#">Portfolio</a>
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" aria-current="page" href="#Home">Home</a>
+                  <a class="nav-link" href="#About">About</a>
+                  <a class="nav-link" href="#Service">Service</a>
+                  <a class="nav-link" href="#Portfolio">Portfolio</a>
+                  <a class="nav-link" href="#Contact">Contact</a>
                 </div>
               </div>
             </div>
         </nav>
 
+        <!-- Home Section-->
         <section class="container h-100" id="Home">
             <div class="row h-100 pt-a">
                 <div id="about" class="col-6 d-flex align-items-center justify-content-center">
@@ -69,28 +70,68 @@
             </div>
         </section>
 
-        <section id="About" class="h-100">
-            <div class="header-line">
-                <div class="line"></div>
-                <p class="title">About</p>
+        <!-- About Section-->
+        <div class="header-line">
+            <div class="line"></div>
+            <p class="title">About</p>
+        </div> 
+
+        <section id="About" class="container h-100">
+            <div class="row h-100 pt-a">
+                <div id="about" class="col-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h2 class="fw-semibold">Malte Wenzel</h2>
+                        <h3 class="h5 text-muted">
+                            Softwaredeveloper
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde quia natus aut totam accusamus minima quisquam vitae sint, 
+                            optio maiores cum sed minus illo, ipsam porro pariatur adipisci ipsum 
+                            mollitia?<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde quia natus aut totam accusamus minima quisquam vitae sint, 
+                            optio maiores cum sed minus illo, ipsam porro pariatur adipisci ipsum 
+                            mollitia?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde quia natus aut totam accusamus minima quisquam vitae sint, 
+                            optio maiores cum sed minus illo, ipsam porro pariatur adipisci ipsum 
+                            mollitia?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-center" id="aboutMeLogoImg">
+                    <div id="aboutImg">
+                        <img src="/public/assets/img/me.png" alt="Bild von mir" id="Bild von dem CEO Malte Wenzel">
+                    </div>
+                    <img src="/public/assets/img/MWebTec_Logo_Neu.svg" alt="Logo der Firma MWebTec">
+                </div>
             </div>
         </section>
-        <section id="Service" class="h-100">
-            <div class="header-line">
-                <div class="line"></div>
-                <p class="title">Service</p>
-            </div> </section>
-        <section id="Portfolio" class="h-100">
-            <div class="header-line">
-                <div class="line"></div>
-                <p class="title">Portfolio</p>
-            </div>
+
+        <!-- Service Section-->
+        <div class="header-line">
+            <div class="line"></div>
+            <p class="title">Service</p>
+        </div> 
+        <section id="Service" class="container h-100">
+ 
         </section>
-        <section id="Contact" class="h-100">
-            <div class="header-line">
-                <div class="line"></div>
-                <p class="title">Contact</p>
-            </div>
+
+        <!-- Portfolio Section-->
+        <div class="header-line">
+            <div class="line"></div>
+            <p class="title">Portfolio</p>
+        </div>
+        <section id="Portfolio" class="container h-100">
+        </section>
+        <!-- Contact Section-->
+        <div class="header-line">
+            <div class="line"></div>
+            <p class="title">Contact</p>
+        </div>
+        <section id="Contact" class="container h-100">
+
         </section>
 
         <script src="src/js/main.js"></script>
