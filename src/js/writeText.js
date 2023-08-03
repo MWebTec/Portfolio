@@ -1,13 +1,42 @@
-const text = 'Hello, my name is Malte and I am a 31-year-old professional web developer. I have completed a certified web developer training program at ILS and am currently pursuing a Bachelor of Science degree in Software Development. With my expertise and knowledge, I can help you bring your vision to life by creating stunning websites and web applications that are both functional and visually appealing. Whether you need a simple landing page or a complex e-commerce platform, I have the skills and creativity to deliver a product that exceeds your expectations. So why wait? Contact me today and let’s start building something amazing together!';
-const textElement = document.querySelector('.text');
-let index = 0;
+const textAboutMe = 'I am a 31-year-old professional Web developer. I have completed a certified web developer training program at ILS and am currently pursuing a Bachelor of Science degree in Software Development.';
+const textElementAboutMe = document.querySelector('.aboutMeText');
 
-function writeText() {
-  textElement.innerText = text.slice(0, index);
-  index++;
-  if (index > text.length) {
+const textHeader = 'Hi, I am Malte Wenzel';
+const textElementHeader = document.getElementById('nameHeader');
+
+let indexHeader = 0;
+let indexAboutMe = 0;
+
+function writeHeaderText() {
+  const cursor = '<span class="blinking-cursor"> |</span>';
+  const innerText = textHeader.slice(0, indexHeader);
+
+  textElementHeader.innerHTML = innerText + cursor;
+  indexHeader++;
+
+  if (indexHeader > textHeader.length) {
+    clearInterval(intervalHeader);
+    textElementHeader.innerHTML = innerText;
+    startAboutMeInterval();
+  }
+}
+
+function startAboutMeInterval() {
+  interval = setInterval(() => {
+    writeText(textAboutMe, textElementAboutMe);
+  }, 30);
+}
+
+function writeText(text, textElement) {
+  const cursor = '<span class="blinking-cursor"> |</span>';
+  const innerText = text.slice(0, indexAboutMe);
+
+  textElement.innerHTML = innerText + cursor;
+  indexAboutMe++;
+
+  if (indexAboutMe > text.length) {
     clearInterval(interval);
   }
 }
 
-const interval = setInterval(writeText, 15);
+const intervalHeader = setInterval(writeHeaderText, 50);
