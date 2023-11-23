@@ -16,8 +16,56 @@ body {
     font-family: "ROBOTO", sans-serif;
     background-color: #f0f0f0;
     box-sizing: border-box;
+    transition: background-color 0.5s ease;
 }
 
+.mode-switch {
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mode-label {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+#modeToggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#modeToggle:checked + .mode-label {
+    background-color: #4caf50; /* Light green color, you can customize */
+}
+
+#modeToggle:checked + .mode-label:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateX(20px);
+    transition: transform 0.3s ease;
+}
+
+#modeToggle:checked + .mode-label:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
 section {
     z-index: 50;
     height: 100%;

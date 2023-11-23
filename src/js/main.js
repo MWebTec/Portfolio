@@ -33,6 +33,18 @@ function updateNavigation() {
     });
   }
   
-  document.addEventListener("scroll", updateNavigation);
-  
-  window.addEventListener("load", updateNavigation);
+document.addEventListener("scroll", updateNavigation);
+window.addEventListener("load", updateNavigation);
+
+// Dark Mode Toggle 
+function toggleDarkMode() {
+  const modeToggle = document.getElementById('modeToggle');
+  const body = document.body;
+    
+  modeToggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+  });
+}
+
+
+
